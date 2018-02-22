@@ -1,0 +1,8 @@
+Cluster0-3252-shard-0:PRIMARY> db.restaurants.update(
+...   { "address.zipcode": "11215"},
+...   {
+...     $set: { "address.zipcode": "11214" }
+...   },
+...   { multi: true}
+... )
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })

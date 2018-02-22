@@ -1,0 +1,7 @@
+Cluster0-3252-shard-0:PRIMARY> db.restaurants.createIndex( { "address.zipcode": 1, "restaurant_id": -1 } )
+{
+        "createdCollectionAutomatically" : false,
+        "numIndexesBefore" : 1,
+        "numIndexesAfter" : 2,
+        "ok" : 1
+}

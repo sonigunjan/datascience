@@ -1,0 +1,2 @@
+Cluster0-3252-shard-0:PRIMARY> db.restaurants.remove( { "cuisine": "American" }, { justOne: true } )
+WriteResult({ "nRemoved" : 1 })

@@ -1,0 +1,15 @@
+Cluster0-3252-shard-0:PRIMARY> db.restaurants.aggregate(
+...    [
+...      { $match: { "borough": "Brooklyn" } },
+...      { $group: { "_id": "$address.zipcode" , "count": { $sum: 1 } } }
+...    ]
+... );
+{ "_id" : "11209", "count" : 1 }
+{ "_id" : "11218", "count" : 1 }
+{ "_id" : "11223", "count" : 1 }
+{ "_id" : "11214", "count" : 2 }
+{ "_id" : "11225", "count" : 1 }
+{ "_id" : "11208", "count" : 1 }
+{ "_id" : "11234", "count" : 1 }
+{ "_id" : "11226", "count" : 1 }
+{ "_id" : "11219", "count" : 1 }

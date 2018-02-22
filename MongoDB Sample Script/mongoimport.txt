@@ -1,0 +1,9 @@
+Syntax - 
+mongoimport --uri "mongodb://sgunjan05:<passowrd>@cluster0-3252-tqnl2.mongodb.net/primedb" --collection restaurantscoll --drop --file "C:\Users\Documents\MongoDB\primer-dataset.json"
+
+Output -
+C:\Program Files\MongoDB\Server\3.6\bin>mongoimport --uri "mongodb://sgunjan05:<password>@cluster0-3252-tqn12.mongodb.net/test" --collection restaurants --drop --file "C:\Users\Documents\MongoDB\primer-dataset.json"
+2018-01-30T22:41:48.457-0500    [........................] test.restaurants     0B/11.3MB (0.0%)
+2018-01-30T22:41:51.452-0500    [........................] test.restaurants     0B/11.3MB (0.0%)
+2018-01-30T22:41:54.452-0500    [........................] test.restaurants     0B/11.3MB (0.0%)
+2018-01-30T22:41:56.220-0500    signal 'interrupt' received; forcefully terminating
